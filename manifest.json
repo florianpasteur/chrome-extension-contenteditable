@@ -18,7 +18,6 @@
 		"default_title": "__MSG_enable__"
 	},
 	"permissions": [
-		"tabs",
 		"file:///*",
 		"http://*/",
 		"https://*/"
