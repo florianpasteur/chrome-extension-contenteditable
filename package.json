@@ -1,0 +1,9 @@
+{
+  "name": "add-to-things",
+  "description": "Adds any page to Things task manager",
+  "private": true,
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-zip": "^3.2.0"
+  }
+}

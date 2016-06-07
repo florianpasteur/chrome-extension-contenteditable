@@ -1,0 +1,14 @@
+{
+	"name": {
+		"message": "ContentEditable"
+	},
+	"desc": {
+		"message": "Делает страницы редактируемыми"
+	},
+	"enable": {
+		"message": "Редактировать"
+	},
+	"disable": {
+		"message": "Готово"
+	}
+}

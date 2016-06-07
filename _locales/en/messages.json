@@ -1,0 +1,14 @@
+{
+	"name": {
+		"message": "ContentEditable"
+	},
+	"desc": {
+		"message": "Makes pages editable"
+	},
+	"enable": {
+		"message": "Edit"
+	},
+	"disable": {
+		"message": "Done"
+	}
+}
