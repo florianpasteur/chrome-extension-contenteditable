@@ -5,6 +5,9 @@
 	"desc": {
 		"message": "Makes pages editable"
 	},
+	"full": {
+		"message": "Extension that makes pages editable by adding contenteditable attribute to the <body>. Press icon to start editing, press it again when you’re done. Once page is reloaded changes you’ve made are gone."
+	},
 	"enable": {
 		"message": "Edit"
 	},
