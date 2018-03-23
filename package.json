@@ -4,6 +4,9 @@
   "private": true,
   "dependencies": {
     "gulp": "^3.9.1",
-  }
     "gulp-zip": "^4.1.0"
+  },
+  "scripts": {
+    "start": "gulp"
+  },
 }
