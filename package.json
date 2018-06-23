@@ -1,12 +1,12 @@
 {
-  "name": "add-to-things",
-  "description": "Adds any page to Things task manager",
+  "name": "contenteditable",
+  "description": "Makes pages editable",
   "private": true,
   "dependencies": {
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.0",
     "gulp-zip": "^4.1.0"
   },
   "scripts": {
     "start": "gulp"
-  },
+  }
 }
