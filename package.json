@@ -2,11 +2,10 @@
   "name": "contenteditable",
   "description": "Makes pages editable",
   "private": true,
-  "dependencies": {
-    "gulp": "^4.0.0",
-    "gulp-zip": "^4.1.0"
+  "devDependencies": {
+    "bestzip": "^1.1.4"
   },
   "scripts": {
-    "start": "gulp"
+    "start": "bestzip contenteditable.zip _locales images background.js manifest.json"
   }
 }
