@@ -4,13 +4,10 @@ Makes any page editable by adding `contenteditable` attribute to the `<body>`. P
 
 - [Chrome](https://chrome.google.com/webstore/detail/contenteditable/jphnpoochmeokkboopijkcncghifidhm)
 - [Firefox](https://addons.mozilla.org/en-US/firefox/addon/contenteditable/)
-- [Opera](https://addons.opera.com/en/extensions/details/contenteditable/)
 
 ![ContentEditable in Chrome](pictures/chrome.png)
 
 ![ContentEditable in Firefox](pictures/firefox.png)
-
-![ContentEditable in Opera](pictures/opera.png)
 
 ---
 Licensed under MIT License
