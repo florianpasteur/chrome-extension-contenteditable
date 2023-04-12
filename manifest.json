@@ -18,9 +18,7 @@
         "default_title": "__MSG_enable__"
     },
     "permissions": [
-        "file:///*",
-        "http://*/",
-        "https://*/"
+        "activeTab",
     ],
     "background": {
         "scripts": ["background.js"],
