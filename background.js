@@ -4,7 +4,7 @@ function enable(tabId, enable) {
     var icon = enable ? '-active' : '';
     var title = enable ? 'disable' : 'enable';
 
-    chrome.pageAction.setIcon({
+    chrome.action.setIcon({
         path: {
             '19': 'images/button-19' + icon + '.png',
             '38': 'images/button-38' + icon + '.png'
@@ -12,22 +12,22 @@ function enable(tabId, enable) {
         tabId: tabId
     });
 
-    chrome.pageAction.setTitle({
+    chrome.action.setTitle({
         title: chrome.i18n.getMessage(title),
         tabId: tabId
     });
 
-    chrome.tabs.executeScript(tabId, {
-        code: 'document.body.setAttribute("contenteditable", "' + enable + '")'
+
+    chrome.scripting.executeScript({
+        target: {tabId: tabId, allFrames: true},
+        files: [enable ? "enable.js" : "disable.js"],
     });
 
     contentEditable = enable;
 }
 
-chrome.tabs.onUpdated.addListener(function(tab) {
-    chrome.pageAction.show(tab);
-});
 
-chrome.pageAction.onClicked.addListener(function(tab) {
-    enable(tab.id, !contentEditable);
-});
+chrome.action.onClicked.addListener((tab) => {
+        enable(tab.id, !contentEditable);
+    }
+)
