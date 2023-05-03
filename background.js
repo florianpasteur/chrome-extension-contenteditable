@@ -7,20 +7,24 @@ function enable(tabId, enable) {
     chrome.action.setIcon({
         path: {
             '19': 'images/button-19' + icon + '.png',
-            '38': 'images/button-38' + icon + '.png'
+            '38': 'images/button-38' + icon + '.png',
         },
-        tabId: tabId
+        tabId: tabId,
     });
 
     chrome.action.setTitle({
         title: chrome.i18n.getMessage(title),
-        tabId: tabId
+        tabId: tabId,
     });
 
-
     chrome.scripting.executeScript({
-        target: {tabId: tabId, allFrames: true},
-        files: [enable ? "enable.js" : "disable.js"],
+        target: {
+            tabId: tabId,
+            allFrames: true,
+        },
+        files: [
+            enable ? 'enable.js' : 'disable.js'
+        ],
     });
 
     contentEditable = enable;
@@ -28,6 +32,5 @@ function enable(tabId, enable) {
 
 
 chrome.action.onClicked.addListener((tab) => {
-        enable(tab.id, !contentEditable);
-    }
-)
+    enable(tab.id, !contentEditable);
+});

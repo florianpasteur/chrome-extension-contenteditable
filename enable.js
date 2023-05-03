@@ -1,1 +1,1 @@
-document.body.setAttribute("contenteditable", "true")
+document.body.setAttribute('contenteditable', 'true');
