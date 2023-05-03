@@ -1,2 +1,2 @@
 publish:
-	zip contenteditable.zip _locales/**/* images/* background.js manifest.json
+	zip contenteditable.zip _locales/**/* images/* disable.js enable.js background.js manifest.json
